@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ----------------calc container------------------------ */
+.conatiner {
+  width: 525px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 12px 12px 20px #cbced1, -12px -12px 20px #cbced1;
+  background-color: black;
+}
+
+/* ----------------calc screen------------------------ */
+.display #screen {
+  width: 97%;
+  height: 70px;
+  font-size: 35px;
+
+  outline: none;
+  border: none;
+  text-align: right;
+  background: #ecf0f3;
+  border-radius: 6px;
+  box-shadow: inset 8px 8px 8px #cbced1 inset -8px -8px 8px #ffffff;
+  color: white;
+  background-color: black;
+}
+
+/* ----------------calc buttons------------------------ */
+.btns {
+  margin-top: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background-color 0.3s ease;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.btns .row button {
+  width: 14%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: rgba(17, 16, 16, 1);
+  color: white;
+  box-shadow: 5px 5px 8px #00000020 -5px -5px 8px #ffffff;
+}
+
+.row button:hover {
+  cursor: pointer;
+  background-color: rgb(112, 104, 104);
+  color: black;
+}
+
+.row button {
+  background: #34495e;
+  color: #fff;
+}
+
+.row button:active {
+  background: #fbfff8;
+  top: 15px;
+  transform: translateY(3px);
+}
+
+.row button:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="display">
+        <input type="text" id="screen" placeholder="0" disabled />
+      </div>
+      <div class="btns">
+        <div class="row">
+          <!-- <button class="button" id="radian">Rad</button> -->
+          <button class="button" id="delete" onclick="deleteChar()">
+            <span class="material-symbols-outlined"> backspace </span>
+          </button>
+          <button class="button" onclick="mClear()">MC</button>
+          <button class="button" onclick="mRecall()">MR</button>
+          <button class="button" onclick="mPlus()">M+</button>
+          <button class="button" onclick="mMinus()">M-</button>
+          <button class="button" onclick="mStore()">MS</button>
+        </div>
+        <div class="row">
+          <button class="button" id="change">
+            <span class="material-symbols-outlined"> swap_horiz </span>
+          </button>
+
+          <button
+            class="button special-operator"
+            id="square-root"
+            value="sq-root"
+          >
+            &#8730;
+          </button>
+          <button
+            class="button clear"
+            id="clear"
+            style="color: rgb(255, 17, 0)"
+            onclick="clearScreen()"
+          >
+            C
+          </button>
+          <button
+            class="button operator"
+            id="openBracket"
+            style="color: rgb(64, 197, 64)"
+          >
+            (
+          </button>
+          <button
+            class="button operator"
+            id="closeBracket"
+            style="color: rgb(64, 197, 64)"
+          >
+            )
+          </button>
+          <button class="button operator" style="color: rgb(64, 197, 64)">
+            %
+          </button>
+          <button class="button operator" style="color: rgb(64, 197, 64)">
+            /
+          </button>
+        </div>
+        <div class="row">
+          <button class="button trigo" id="sin">sin</button>
+          <button class="button trigo" id="cos">cos</button>
+          <button class="button trigo" id="tan">tan</button>
+          <button class="button number">7</button>
+          <button class="button number">8</button>
+          <button class="button number">9</button>
+          <button class="button operator" style="color: rgb(64, 197, 64)">
+            *
+          </button>
+        </div>
+        <div class="row">
+          <button class="button special-operator" id="ln">ln</button>
+          <button class="button special-operator" id="log">log</button>
+          <button class="button special-operator" id="1/x">1/x</button>
+          <button class="button number">4</button>
+          <button class="button number">5</button>
+          <button class="button number">6</button>
+          <button class="button operator" style="color: rgb(64, 197, 64)">
+            -
+          </button>
+        </div>
+        <div class="row">
+          <button class="button special-operator" id="exponential">
+            e<sup>x</sup>
+          </button>
+          <button class="button special-operator" id="square">
+            x<sup>2</sup>
+          </button>
+          <button class="button special-operator" id="x-raise-to-y">
+            x<sup>y</sup>
+          </button>
+          <button class="button number">1</button>
+          <button class="button number">2</button>
+          <button class="button number">3</button>
+          <button class="button operator" style="color: rgb(64, 197, 64)">
+            +
+          </button>
+        </div>
+        <div class="row">
+          <button class="button special-operator" id="modulo">|x|</button>
+          <button class="button special-operator" id="pi">&pi;</button>
+          <button
+            class="button special-operator"
+            id="e"
+            onclick="fact(screenArr)"
+          >
+            e
+          </button>
+          <button
+            class="button special-operator"
+            id="minusOf"
+            onclick="uMinus()"
+          >
+            +/-
+          </button>
+          <button class="button number">0</button>
+          <button class="button operator" id="decimal">.</button>
+          <button
+            class="button"
+            onclick="finalAnswer(screenArr)"
+            id="equal-to"
+            style="color: white; background-color: green"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./build/js/script.js"></script>
+  </body>
+</html>
