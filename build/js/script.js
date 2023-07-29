@@ -179,6 +179,7 @@ let tmpObj = {
     'abs(': 'Math.abs(',
     π: 'Math.PI',
     e: 'Math.E',
+    'log(':'Math.log10(',
     '√(': 'Math.sqrt(',
     'sinh(': 'Math.sinh(',
     'cosh(': 'Math.cosh(',
@@ -309,6 +310,7 @@ document.addEventListener('keydown', function (e) {
         e.key === '/') {
         screenEl.value += e.key;
         screenArr.push(e.key);
+        // console.log(screenArr)
     }
     else if (e.key === 'Enter') {
         finalAnswer(screenArr);

@@ -194,6 +194,7 @@ let tmpObj: InitialObj = {
   'abs(': 'Math.abs(',
   π: 'Math.PI',
   e: 'Math.E',
+  'log(':'Math.log10(',
   '√(': 'Math.sqrt(',
   'sinh(': 'Math.sinh(',
   'cosh(': 'Math.cosh(',
